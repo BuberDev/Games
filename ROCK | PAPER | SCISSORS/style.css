@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   
+    display: flex;
+    width: 1000px;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    color: gray
+    
+
+}
+
+h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.scores{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.scores p{
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    
+}
+
+.scores .comp {
+    background: blue;
+}
+
+.scores span{
+    font-size: 35px;
+}
+
+.options button{
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+   
+}
+
+.options button:hover{
+    transform: scale(1.2);
+}
+
+.option button img{
+    border-radius: 20px;
+    pointer-events: none;
+    
+}
+
+.option button.active{
+    transform: scale(1.3);
+}
+
+.choices {
+    font-size: 30px;
+    display: none;
+}
+
+.choices.active{
+    display: block;
+}
+
+.result-text{
+    font-size: 40px;
+    background: green;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    
+}
+
+.result-text.active {
+    display: block;
+}
+
+.reset-game{
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+.reset-game.active{
+    display: block;
+}
+
+.reset-game:hover{
+    background: rgba(50, 50, 50, 0.752)
+}
